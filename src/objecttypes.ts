@@ -1,3 +1,6 @@
+// Metadata is used to decorate a class so that it can configure the
+/// expected behavior of the class. 
+
 type person={
     name:string,
     age:Number,
@@ -13,7 +16,9 @@ function  getpersonOwnsProperty(key:personKeys,person:person){
 }
 
 //using it with Generic
-
+//example T can be object of Todo{
+    //name etc
+//}
 function getvalues<T, K extends keyof T>  (obj:T,key:K):T[K]{
 return obj[key]
 }
@@ -25,4 +30,5 @@ return obj[key]
   
 //   const value = getvalues(numbers, 1);
 //   console.log(value); // outputs: "one"
+
 

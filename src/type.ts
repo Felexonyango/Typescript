@@ -44,8 +44,8 @@ if(typeof userInput==='string'){
 
 //tuple
 
-let x: [string, number];
-x = ["hello", 10]; 
+let xy: [string, number];
+xy = ["hello", 10]; 
 // Enum
 
 enum UserResponse {
